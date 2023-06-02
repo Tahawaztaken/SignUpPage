@@ -1,0 +1,20 @@
+p {
+    background-color: hsl(350, 68%, 68%);
+    font-family: Verdana, DejaVu, sans-serif;
+}
+
+div {
+    color: blue;
+    font-size: 36px;
+}
+
+.big,
+#greeny {
+    font-size: 24px;
+}
+
+#greeny {
+    background-color: lightgreen;
+    font-weight: bold;
+    color: black;
+}
