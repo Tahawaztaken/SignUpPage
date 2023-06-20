@@ -1,7 +1,7 @@
 function playRound(playerSelection, computerSelection) {
   // your code here!
 }
--
+
 const readlineSync = require('readline-sync');
 console.log("test")
 const playerSelection = readlineSync.question('Please select one: Rock/Paper/Scissors ');
