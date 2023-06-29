@@ -3,6 +3,12 @@ window.onload = function() {
     console.log("Page loaded!");
 };
 
+const colorPicker = document.querySelector("#colorPicker");
+var selectedColor = "rgb(0,0,0)"
+
+colorPicker.addEventListener("change", (event) => {
+  selectedColor = event.target.value;
+});
 
 const slider = document.querySelector("#myRange")
 const sliderP = document.querySelector(".controls p")
@@ -48,14 +54,15 @@ let isMouseDown = false;
 container.addEventListener("mousemove", (event) => {
   const selectedSquare = event.target;
   if (selectedSquare.classList.contains("square") && isMouseDown && event.button === 0) {
-    selectedSquare.classList.add("clickedOn");
+    selectedSquare.setAttribute("style", `background-color: ${selectedColor}`)
+    // selectedSquare.classList.add("clickedOn");
   }
 });
 
 container.addEventListener("mousedown", (event) => {
   const selectedSquare = event.target;
   if (selectedSquare.classList.contains("square") && event.button === 0) {
-    selectedSquare.classList.add("clickedOn");
+    selectedSquare.setAttribute("style", `background-color: ${selectedColor}`)
     isMouseDown = true;
   }
 });
@@ -76,6 +83,3 @@ container.addEventListener("mouseleave", () => {
   isMouseDown = false;
 });
 
-container.addEventListener("dragstart", () => {
-  isMouseDown = false;
-});
