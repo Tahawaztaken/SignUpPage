@@ -55,7 +55,6 @@ container.addEventListener("mousemove", (event) => {
   const selectedSquare = event.target;
   if (selectedSquare.classList.contains("square") && isMouseDown && event.button === 0) {
     selectedSquare.setAttribute("style", `background-color: ${selectedColor}`)
-    // selectedSquare.classList.add("clickedOn");
   }
 });
 

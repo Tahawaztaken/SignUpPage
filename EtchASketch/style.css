@@ -49,9 +49,28 @@ h1 {
 }
 
 
+  #colorPicker {
+    /* Adjust the width and height as needed */
+    width: 130px;
+    height: 130px;
+    /* Customize the appearance */
+    padding: 0;
+    border: none; /* Remove the border */
+    background: transparent;
+    /* Make it a circle */
+    border-radius: 50%;
+    /* Optional: add box-shadow or other styles as desired */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
   
-.clickedOn {
-    background-color: black;
-}
-
-
+  #colorPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+  }
+  
+  #colorPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+  }
