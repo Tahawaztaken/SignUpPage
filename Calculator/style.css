@@ -1,0 +1,57 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .main-container {
+    background-color: beige;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #displayScreen {
+    display: flex;
+    height: 200px;
+    margin: 10px;
+    background-color: blueviolet;
+  }
+  
+  #buttons {
+    display: flex;
+    margin: 10px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+  }
+
+#buttons div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#buttons div button {
+    flex-grow: 1;
+    background-color: #48abe0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 31px;
+    width: 70px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+}
+
+#buttons div button:active {
+    background-color: #48abe0;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+  }
