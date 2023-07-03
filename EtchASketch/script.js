@@ -72,6 +72,18 @@ sizeButton.addEventListener("click", () => {
 })
 
 
+const clearButton = document.querySelector("#clearButton") 
+
+clearButton.addEventListener("click", () => {
+  const allDivs = document.querySelectorAll("#container div")
+
+  allDivs.forEach((div) => {
+    div.style.backgroundColor = "white"; 
+  });
+}
+)
+
+
 const container = document.querySelector("#container");
 let isMouseDown = false;
 
