@@ -29,3 +29,4 @@ const power = function(num1, num2) {
 const factorial = function(x) {
     return (x > 1) ? x * factorial(x-1) : 1;
 };
+
