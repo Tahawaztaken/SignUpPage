@@ -10,6 +10,8 @@ var rainbowOn = false
 colorPicker.addEventListener("change", (event) => {
   rainbowOn = false
   selectedColor = event.target.value;
+  colorButton.classList.add('switchColor')
+  rainbowButton.classList.remove('switchColor')
 });
 
 //COLOR BUTTON
@@ -17,6 +19,8 @@ const colorButton = document.querySelector("#colorButton")
 
 colorButton.addEventListener("click", () => {
   rainbowOn = false
+  colorButton.classList.add('switchColor')
+  rainbowButton.classList.remove('switchColor')
 })
 
 //RAINBOW BUTTON
@@ -25,6 +29,8 @@ const rainbowButton = document.querySelector("#rainbowButton")
 
 rainbowButton.addEventListener("click", () => {
   rainbowOn = true
+  colorButton.classList.remove('switchColor')
+  rainbowButton.classList.add('switchColor')
 })
 
 
