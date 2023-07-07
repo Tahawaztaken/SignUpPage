@@ -33,11 +33,15 @@ const factorial = function(x) {
 
 //Event handlers
 window.onload=function(){
+  var selectedButton = 0;
   let btns = document.querySelectorAll('button');
+  let selectedDisplayVal = document.querySelector("#displayScreen span:last-child")
 
-  for (i of btns) {
-    i.addEventListener('click', function() {
-      console.log(this.innerHTML);
+  for (button of btns) {
+    button.addEventListener('click', function(){
+      selectedButton = parseInt(this.innerHTML)
+      selectedDisplayVal.innerHTML = this.innerHTML
+      console.log(selectedButton);
    });
   }
 }
