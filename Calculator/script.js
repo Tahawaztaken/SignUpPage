@@ -30,3 +30,15 @@ const factorial = function(x) {
     return (x > 1) ? x * factorial(x-1) : 1;
 };
 
+
+//Event handlers
+window.onload=function(){
+  let btns = document.querySelectorAll('button');
+
+  for (i of btns) {
+    i.addEventListener('click', function() {
+      console.log(this.innerHTML);
+   });
+  }
+}
+
