@@ -67,16 +67,24 @@ body {
   font-size: large;
   border-radius: 5%;
   border: 2px solid black;
+  background-position: center;
+  transition: background 0.5s;
 
 }
 
 .text button:hover {
-  background-color: ;
+  background: #74787b radial-gradient(circle, transparent 1%, #5e6062 1%) center/15000%;
+}
+.text button:active {
+  background-color: #74787b;
+  background-size: 100%;
+  transition: background 0s;
 }
 
-.displayScreen span {
+#displayScreen span {
   display: block;
   font-family: 'Quicksand';
   font-weight: 800;
   font-size: large;
+  margin-right: 10px;
 }
