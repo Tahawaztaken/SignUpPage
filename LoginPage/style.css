@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background: rgb(200,203,212);
+    background: linear-gradient(189deg, rgba(200,203,212,1) 25%, rgba(211,211,219,1) 35%, rgb(227,226,230) 75%, rgba(224,226,229,1) 100%);
+}
+.image {
+    background-color: antiquewhite;
+    min-width: 400px;
+    flex-basis: max(40%, 400px);
+    background-image: url(images/vadim-bogulov-I_YfFQOL67c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.form {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+form {
+    border: 5px solid black;
+    margin-left: 10%;
+    width: 70%;
+    height: 75%;
+    min-width: 400px;
+    flex-basis: max(70%, 400px);
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form > div > * {
+    display: flex;
+    justify-content: end;
+}
+
