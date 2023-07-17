@@ -35,10 +35,17 @@ form > div {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex: auto;
+
 }
 
-form > div > * {
+form > div > div {
     display: flex;
+    min-width: 50%;
     justify-content: end;
+    gap: 10px;
 }
 
+div > input {
+    width: 50%;
+}
