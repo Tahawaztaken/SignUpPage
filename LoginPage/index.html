@@ -5,54 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script href="script.js"></script>
 </head>
 <body>
     <div class="image"></div>
-    <div class="form">
-        <form>
-            <h1>Get Started</h1>
-            
-            <div>
+    
+    <div class="right-side">
+        <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.
+            <br>
+            You know you want to.
+        </h1>
+        <div class="form">
+            <form action="#" method="get">
+                <h1>Let's do this!</h1>
                 <div>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="fName" placeholder="Bob">
+                    <div>
+                        <div>
+                            <label for="first-name">*First Name:</label>
+                            <input type="text" id="first-name" name="fName" placeholder="Bob" required>
+                        </div>
+                        <div>
+                            <label for="last-name">*Last Name:</label>
+                            <input type="text" id="last-name" name="lName" placeholder="DaBuilder" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email">*Email:</label>
+                            <input type="email" id="email" name="email" placeholder="BobDaBuilder@gmail.com" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phoneNumber" placeholder="647-123-4352" pattern="^\d{3}-\d{3}-\d{4}$" title="Please enter a valid phone number in the format 111-111-1111." placeholder="111-111-1111">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">*Password:</label>
+                            <input type="password" id="password" name="password1" placeholder="Enter your password" required>
+                        </div>
+                        <div>
+                            <label for="password2">*Confirm Password:</label>
+                            <input type="password" id="password2"  name="password2" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="lName" placeholder="DaBuilder">
-                </div>
-            </div>
-
-
-            <div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="BobDaBuilder@gmail.com">
-                </div>
-
-                <div>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phoneNumber" placeholder="647-123-4352">
-                </div>
-            </div>
-
-
-            <div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password1" placeholder="Enter your password">
-                </div>
-
-                <div>
-                    <label for="password2">Confirm Password:</label>
-                    <input type="password" id="password2" name="password2" placeholder="Confirm your password">
-                </div>
-            </div>
-
-            <input type="submit" value="Create Account">
-            <p>Already signed up?<a href="https://www.youtube.com/">Sign In</a></p>
-        </form>
+                <input type="submit" value="Create Account">
+                <p>Already signed up?<a href="https://www.youtube.com/">Sign In</a></p>
+            </form>
+        </div>
+        <div>
+        </div>
     </div>
 </body>
 </html>
