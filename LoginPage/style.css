@@ -66,8 +66,24 @@ form > div > div {
 
 }
 
-
-
+#submitB {
+    border-color: #d7aa51;
+    box-shadow: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 15px;
+    background: #d7aa51;
+    text-decoration: none;
+  }
+  
+  #submitB:hover {
+    background: #67524c;
+    text-decoration: none;
+  }
 
 
 
