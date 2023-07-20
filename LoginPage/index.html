@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script href="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="image"></div>
@@ -50,6 +50,7 @@
                             <input type="password" id="password2"  name="password2" placeholder="Confirm your password" required>
                         </div>
                     </div>
+                    <p id="errorMessage" style="color: red; opacity: 0;" >*Passwords do not match</p>
                 </div>
                 <input type="submit" value="Create Account">
                 <p>Already signed up?<a href="https://www.youtube.com/">Sign In</a></p>
