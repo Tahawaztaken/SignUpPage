@@ -31,27 +31,35 @@ body {
 
 .form input {
     display: block;
-    padding: 5px;
+    padding: 7px;
+    font-size: 12px;
+    border-width: 2px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
 }
 
 .form input:focus {
     outline: none;
-    border: 3px solid rgb(0, 0, 255);
+    box-shadow: 0px 0px 5px rgb(0, 0, 255);
 }
 
 /* Apply black border by default */
 .form input {
-    border-color: black;
+    box-shadow: 0px 0px 5px black;
   }
   
   /* Apply green border when input is valid */
   .form input:valid {
-    border-color: green;
+    box-shadow: 0px 0px 5px green;
   }
   
   /* Apply red border when input is invalid after user interaction */
   .form input:invalid:not(:placeholder-shown) {
-    border-color: red;
+    box-shadow: 0px 0px 5px red;
   }
 
 form > div {
