@@ -2,10 +2,10 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
-    background: rgb(200,203,212);
-    background: linear-gradient(189deg, rgba(200,203,212,1) 25%, rgba(211,211,219,1) 35%, rgb(227,226,230) 75%, rgba(224,226,229,1) 100%);
+    background: linear-gradient(189deg, rgba(200, 203, 212, 1) 25%, rgba(211, 211, 219, 1) 35%, rgb(227, 226, 230) 75%, rgba(224, 226, 229, 1) 100%);
     font-family: 'Quicksand', sans-serif, 'Roboto', 'Ubuntu';
 }
+
 .logo {
     position: absolute;
     font-size: 50px;
@@ -22,14 +22,13 @@ body {
 }
 
 .right-side > * {
-        padding-left: 5%;
+    padding-left: 5%;
 }
 
 .header {
     display: flex;
     width: 70%;
     margin-top: 5vh;
-
 }
 
 .header h1 {
@@ -37,8 +36,7 @@ body {
 }
 
 .form {
-    /* background-color: rgb(0, 0, 0); */
-    box-shadow: 2px 0px 4px 0px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 2px 0px 4px 0px rgb(0 0 0 / 0.2);
     padding-bottom: 30px;
     padding-top: 20px;
 }
@@ -57,28 +55,28 @@ body {
     color: #000000;
     border-style: hidden;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
 }
 
 .form input:focus {
     outline: none;
-    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
 }
 
 /* Apply black border by default */
 .form input {
     box-shadow: 0px 0px 5px rgb(53, 39, 8);
-  }
-  
-  /* Apply green border when input is valid */
-  .form input:valid {
+}
+
+/* Apply green border when input is valid */
+.form input:valid {
     box-shadow: 0px 0px 5px green;
-  }
-  
-  /* Apply red border when input is invalid after user interaction */
-  .form input:invalid:not(:placeholder-shown) {
+}
+
+/* Apply red border when input is invalid after user interaction */
+.form input:invalid:not(:placeholder-shown) {
     box-shadow: 0px 0px 5px red;
-  }
+}
 
 form > div {
     display: flex;
@@ -89,7 +87,6 @@ form > div {
 form > div > div {
     display: flex;
     gap: 100px;
-
 }
 
 #submitB {
@@ -104,76 +101,9 @@ form > div > div {
     padding: 15px;
     background: #d7aa51;
     text-decoration: none;
-  }
-  
-  #submitB:hover {
+}
+
+#submitB:hover {
     background: #67524c;
     text-decoration: none;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .form {
-    flex-basis: 60%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-} */
-
-/* form {
-    border: 5px solid black;
-    margin-left: 10%;
-    width: 70%;
-    height: 75%;
-    min-width: 400px;
-    flex-basis: max(70%, 400px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
-/* 
-form > div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex: auto;
-} */
-
-
-/* form > div > div {
-    display: flex;
-    min-width: 50%;
-    justify-content: space-around;
-}
-
-div > label {
-    display: inline-block;
-    width: 100px;
-} */ 
