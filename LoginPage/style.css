@@ -4,7 +4,14 @@ body {
     margin: 0;
     background: rgb(200,203,212);
     background: linear-gradient(189deg, rgba(200,203,212,1) 25%, rgba(211,211,219,1) 35%, rgb(227,226,230) 75%, rgba(224,226,229,1) 100%);
+    font-family: 'Quicksand', sans-serif, 'Roboto', 'Ubuntu';
 }
+.logo {
+    position: absolute;
+    font-size: 50px;
+    margin: 100px 100px;
+}
+
 .image {
     background-color: antiquewhite;
     min-width: 400px;
@@ -15,11 +22,22 @@ body {
 }
 
 .right-side > * {
-        padding-left: 20px;
+        padding-left: 5%;
+}
+
+.header {
+    display: flex;
+    width: 70%;
+    margin-top: 5vh;
+
+}
+
+.header h1 {
+    font-size: 30px;
 }
 
 .form {
-    background-color: white;
+    /* background-color: rgb(0, 0, 0); */
     box-shadow: 2px 0px 4px 0px 10px rgb(0 0 0 / 0.2);
     padding-bottom: 30px;
     padding-top: 20px;
@@ -38,18 +56,18 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     border-style: hidden;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
 }
 
 .form input:focus {
     outline: none;
-    box-shadow: 0px 0px 5px rgb(0, 0, 255);
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
 }
 
 /* Apply black border by default */
 .form input {
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgb(53, 39, 8);
   }
   
   /* Apply green border when input is valid */
